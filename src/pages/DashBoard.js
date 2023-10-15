@@ -3,11 +3,11 @@ import StatsContainer from '../sections/Stats/StatsContainer'
 import { stats } from '../constants/stats'
 import StatItem from '../sections/Stats/StatItem'
 import ChartContainer from '../sections/Charts/ChartContainer'
-import BarGraph from '../sections/Charts/BarGraph'
-import TestPie from '../sections/Charts/TestPie'
 import Table from '../sections/tables/Table'
 import TableContainer from '../sections/tables/TableContainer'
 import { tableBodyData, tableHeaderData } from '../constants/tableData'
+import BarGraph from '../sections/Charts/BarGraph'
+import PieGraph from '../sections/Charts/PieGraph'
 
 export const DashBoard = () => {
     return (
@@ -21,12 +21,13 @@ export const DashBoard = () => {
             </StatsContainer>
 
             <ChartContainer>
+                {/* <BarGraph /> */}
                 <BarGraph />
-                <TestPie />
+                <PieGraph />
             </ChartContainer>
 
             <TableContainer>
-                <Table tableHeadData={tableHeaderData} tableBodyData={tableBodyData}/>
+                <Table tableHeadData={tableHeaderData} tableBodyData={tableBodyData} />
             </TableContainer>
         </div>
     )

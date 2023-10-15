@@ -3,7 +3,7 @@ import React from 'react'
 
 const Search = () => {
     return (
-        <div className='border border-1 border-gray-100 rounded-md gap-1 p-1 flex items-center bg-white'>
+        <div className='border shadow-md border-1 border-gray-100 rounded-md gap-1 p-2 flex items-center bg-white'>
             <SearchIcon className='text-gray-300 h-5'/>
             <input
                 className='border-0 outline-none text-sm'

@@ -1,5 +1,5 @@
 import React from 'react'
-import Search from '../../components/ui/Search'
+import Search from '../../components/Search'
 
 const ChartHeader = ({ title, subtitle, showSearch, showDropdown }) => {
     return (

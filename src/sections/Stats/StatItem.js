@@ -5,9 +5,9 @@ import { ArrowDown, ArrowUp } from 'lucide-react'
 const StatItem = ({ stat }) => {
     return (
             <Card>
-                <div className='w-[250px] flex items-center gap-3 py-2'>
-                    <div className={`rounded-full h-24 w-24 flex justify-center items-center ${stat.bgColor} p-2}`}>
-                        <stat.icon size={50} className={`${stat.iconColor}`} />
+                <div className='w-[230px] flex items-center gap-2 py-2'>
+                    <div className={`rounded-full h-24 w-24 md:h-20 md:w-20 flex justify-center items-center ${stat.bgColor} p-2}`}>
+                        <stat.icon  className={`h-12 w-12 md:h-10 md:w-10 ${stat.iconColor}`} />
                     </div>
 
                     <div className='flex flex-col w-max'>

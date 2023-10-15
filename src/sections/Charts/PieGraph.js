@@ -3,27 +3,7 @@ import Chart from "react-apexcharts";
 import Card from '../../components/ui/Card';
 import ChartHeader from './ChartHeader';
 
-var options = {
-    series: [44, 55, 41],
-    chart: {
-        type: 'donut',
-    },
-    responsive: [{
-        breakpoint: 480,
-        options: {
-            chart: {
-                width: 200
-            },
-            legend: {
-                position: 'bottom'
-            }
-        }
-    }]
-};
-
-
-
-const TestPie = () => {
+const PieGraph = () => {
     return (
         <div className='w-full' id="chart">
             <Card>
@@ -68,10 +48,10 @@ const TestPie = () => {
                         },
 
                         responsive: [{
-                            breakpoint: 480,
+                            // breakpoint: 350,
                             options: {
                                 chart: {
-                                    width: 200,
+                                    width: 400,
                                 },
                                 legend: {
                                     show: false
@@ -85,4 +65,4 @@ const TestPie = () => {
     )
 }
 
-export default TestPie
+export default PieGraph
