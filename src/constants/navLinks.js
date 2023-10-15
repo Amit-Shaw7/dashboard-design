@@ -1,46 +1,38 @@
-import { Code, FilesIcon, ImageIcon, LayoutDashboard, MessageSquare, Music, VideoIcon } from "lucide-react";
-
+import { MdDashboard } from "react-icons/md";
+import { TbCube } from "react-icons/tb";
+import { BsPerson } from "react-icons/bs";
+import { BiWalletAlt } from "react-icons/bi";
+import { TbDiscount2 } from "react-icons/tb";
+import { MdOutlineLiveHelp } from "react-icons/md";
 export const routes = [
     {
         label: "Dashboard",
-        icon: LayoutDashboard,
+        icon: MdDashboard,
         href: "/dashboard",
-        color: "text-sky-500"
     },
     {
-        label: "Conversation",
-        icon: MessageSquare,
-        href: "/conversation",
-        color: "text-violet-500"
+        label: "Product",
+        icon: TbCube,
+        href: "/product",
     },
     {
-        label: "Image Generation",
-        icon: ImageIcon,
-        href: "/image",
-        color: "text-pink-700"
+        label: "Customers",
+        icon: BsPerson,
+        href: "/customers",
     },
     {
-        label: "Video Generation",
-        icon: VideoIcon,
-        href: "/video",
-        color: "text-orange-700"
+        label: "Income",
+        icon: BiWalletAlt,
+        href: "/income",
     },
     {
-        label: "Music Generation",
-        icon: Music,
-        href: "/music",
-        color: "text-emerald-500"
+        label: "Promote",
+        icon: TbDiscount2,
+        href: "/promote",
     },
     {
-        label: "Code Generation",
-        icon: Code,
-        href: "/code",
-        color: "text-green-500"
-    },
-    {
-        label: "Account",
-        icon: FilesIcon,
-        href: "/account",
-        color: "text-emerald-500"
+        label: "Help",
+        icon: MdOutlineLiveHelp,
+        href: "/help",
     },
 ];

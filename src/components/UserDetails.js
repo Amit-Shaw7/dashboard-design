@@ -1,6 +1,6 @@
 import React from 'react';
 import Avatar from './ui/Avatar';
-import { ChevronDown } from 'lucide-react';
+import { IoIosArrowDown } from 'react-icons/io';
 
 const UserDetails = ({ user }) => {
   return (
@@ -12,7 +12,7 @@ const UserDetails = ({ user }) => {
         <span className='text-xs text-gray-400'>{user?.role}</span>
       </div>
 
-      <ChevronDown className='absolute right-2 h-3 w-3' />
+      <IoIosArrowDown color='lightgray' className='absolute right-2' />
     </div>
   )
 }

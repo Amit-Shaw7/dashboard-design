@@ -1,34 +1,21 @@
 import React from 'react'
-import StatsContainer from '../sections/Stats/StatsContainer'
-import { stats } from '../constants/stats'
-import StatItem from '../sections/Stats/StatItem'
-import ChartContainer from '../sections/Charts/ChartContainer'
-import Table from '../sections/tables/Table'
-import TableContainer from '../sections/tables/TableContainer'
-import { tableBodyData, tableHeaderData } from '../constants/tableData'
-import BarGraph from '../sections/Charts/BarGraph'
-import PieGraph from '../sections/Charts/PieGraph'
+import Sidebar from '../components/Sidebar'
+import Navbar from '../components/Navbar'
+import MobileSidebar from '../components/MobileSidebar'
+import { DashBoardContent } from '../sections/dashboard/DashBoardContent'
 
 export const DashBoard = () => {
     return (
-        <div className='py-3 px-4 md:px-14 bg-transparent h-[89vh] overflow-auto flex flex-col gap-5'>
-            <StatsContainer>
-                {
-                    stats.map((stat) => (
-                        <StatItem key={stat.title} stat={stat} />
-                    ))
-                }
-            </StatsContainer>
+        <div className='h-full relative'>
+            <div className='hidden h-full lg:flex lg:w-60 xl:w-72 md:flex-col md:fixed md:inset-y-0 bg-gray-900'>
+                <Sidebar />
+            </div>
 
-            <ChartContainer>
-                {/* <BarGraph /> */}
-                <BarGraph />
-                <PieGraph />
-            </ChartContainer>
-
-            <TableContainer>
-                <Table tableHeadData={tableHeaderData} tableBodyData={tableBodyData} />
-            </TableContainer>
+            <main className='lg:pl-60 xl:pl-72 bg-[#f5f6f8]'>
+                <Navbar />
+                <DashBoardContent />
+            </main>
+            <MobileSidebar />
         </div>
     )
 }

@@ -9,7 +9,7 @@ const Table = ({ tableHeadData, tableBodyData }) => {
         <div className='col-span-12'>
             <Card>
                 <div>
-                    <ChartHeader title="Product Sell" subtitle="" showDropdown={true} showSearch={true} />
+                    <ChartHeader title="Product Sell" subtitle="" showDropdownForTable={true} showSearch={true} />
                     <div className='overflow-x-auto md:w-full'>
                         <table className='w-[700px] md:w-full'>
                             <TableHeaders tableHeadData={tableHeadData} />
