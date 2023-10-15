@@ -25,26 +25,36 @@ var options = {
 
 const TestPie = () => {
     return (
-        <div className='my-1 w-full' id="chart">
+        <div className='w-full' id="chart">
             <Card>
                 <ChartHeader showDropdown={false} title="Customer" subtitle="Customers that buy products" />
-                <div className='py-10'>
-                    <Chart type='donut' series={[12, 40]} options={{
+                {/* <div className='py-1'> */}
+                    <Chart height={250} type='donut' series={[12, 40, 0]} options={{
                         plotOptions: {
                             pie: {
                                 donut: {
                                     labels: {
                                         show: true,
                                         total: {
-                                            label:"Total new customers",
-                                            fontSize:"0.8rem",
-                                            fontWeight:"bold",  
+                                            label: "Total",
+                                            fontSize: "2rem",
+                                            fontWeight: "bold",
                                             showAlways: true,
                                             show: true
+                                        },
+                                        value: {
+                                            fontSize: "2rem",
+                                            fontWeight: "bold",
+                                            showAlways: true,
+                                            show: true,
                                         }
-                                    }
-                                }
-                            }
+                                    },
+                                    size: "80%"
+                                },
+                            },
+                        },
+                        chart: {
+                            width: 100
                         },
                         dataLabels: {
                             enabled: false
@@ -61,7 +71,7 @@ const TestPie = () => {
                             breakpoint: 480,
                             options: {
                                 chart: {
-                                    width: 200
+                                    width: 200,
                                 },
                                 legend: {
                                     show: false
@@ -69,7 +79,7 @@ const TestPie = () => {
                             }
                         }]
                     }} />
-                </div>
+                {/* </div> */}
             </Card>
         </div>
     )

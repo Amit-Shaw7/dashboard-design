@@ -7,10 +7,11 @@ import BarGraph from '../sections/Charts/BarGraph'
 import TestPie from '../sections/Charts/TestPie'
 import Table from '../sections/tables/Table'
 import TableContainer from '../sections/tables/TableContainer'
+import { tableBodyData, tableHeaderData } from '../constants/tableData'
 
 export const DashBoard = () => {
     return (
-        <div className='py-3 px-14 bg-transparent h-[89vh] overflow-auto flex flex-col gap-10'>
+        <div className='py-3 px-4 md:px-14 bg-transparent h-[89vh] overflow-auto flex flex-col gap-5'>
             <StatsContainer>
                 {
                     stats.map((stat) => (
@@ -25,7 +26,7 @@ export const DashBoard = () => {
             </ChartContainer>
 
             <TableContainer>
-                <Table />
+                <Table tableHeadData={tableHeaderData} tableBodyData={tableBodyData}/>
             </TableContainer>
         </div>
     )

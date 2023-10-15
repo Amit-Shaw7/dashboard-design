@@ -4,15 +4,15 @@ import ChartHeader from '../Charts/ChartHeader'
 import TableHeaders from './TableHeaders'
 import TableBody from './TableBody'
 
-const Table = () => {
+const Table = ({tableHeadData , tableBodyData}) => {
     return (
-        <div className='col-span-12 bg-blue-500'>
+        <div className='col-span-12'>
             <Card>
                 <div>
                     <ChartHeader title="Product Sell" subtitle="" showDropdown={true} showSearch={true} />
-                    <table className='w-full'>
-                        <TableHeaders />
-                        <TableBody />
+                    <table className='w-300px md:w-full overflow-x-auto whitespace-nowrap'>
+                        <TableHeaders tableHeadData={tableHeadData}/>
+                        <TableBody tableBodyData={tableBodyData}/>
                     </table>
                 </div>
             </Card>

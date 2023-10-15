@@ -6,10 +6,10 @@ import ChartHeader from './ChartHeader'
 
 const BarGraph = () => {
     return (
-        <div className='col-span-2 p-2'>
+        <div className='lg:col-span-2'>
             <Card>
                 <ChartHeader title="Overview" subtitle="Monthly Earning" showDropdown={true} />
-                <BarChart className='bg-white' width={700} height={300} data={barGraphData}>
+                <BarChart className='bg-white' width={700} height={230} data={barGraphData}>
                     <XAxis axisLine={false} tickLine={false} dy={10} dataKey="name" />
                     {/* <YAxis /> */}
                     <Tooltip cursor={{ fill: "transparent" }} />

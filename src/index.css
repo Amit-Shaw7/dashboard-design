@@ -13,3 +13,8 @@
   font-family: 'Roboto Mono', monospace;
   font-family: 'Urbanist', sans-serif;
 }
+
+thead{
+  height: 40px;
+  border-bottom: 1px solid rgb(241, 241, 241);
+}

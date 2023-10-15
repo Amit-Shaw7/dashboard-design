@@ -1,15 +1,17 @@
 import React from 'react'
 
-const TableHeaders = () => {
+const TableHeaders = ({ tableHeadData }) => {
     return (
-        <thead>
-            <tr>
-                <th>Product name</th>
-                <th>Stock</th>
-                <th>Price</th>
-                <th>Total sales</th>
+        <thead className='mb-5'>
+            <tr className='text-gray-400 text-sm'>
+                {
+                    tableHeadData.map((head , idx) => (
+                        <th key={head} className={`text-${idx === 0 ? "left" : "center" } font-light`}>{head}</th>
+                    ))
+                }
             </tr>
         </thead>
+
     )
 }
 

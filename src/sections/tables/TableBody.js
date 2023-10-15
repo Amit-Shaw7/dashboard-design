@@ -1,14 +1,14 @@
-import React from 'react'
+import React from 'react';
+import TableBodyItem from './TableBodyItem';
 
-const TableBody = () => {
+const TableBody = ({ tableBodyData }) => {
     return (
-        <tbody>
-            <tr>
-                <td>Product name</td>
-                <td>Stock</td>
-                <td>Price</td>
-                <td>Total sales</td>
-            </tr>
+        <tbody className='w-full'>
+            {
+                tableBodyData.map((bodyItem) => (
+                    <TableBodyItem key={bodyItem.productName} data={bodyItem} />
+                ))
+            }
         </tbody>
     )
 }
