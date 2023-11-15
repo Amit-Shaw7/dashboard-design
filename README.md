@@ -1,70 +1,96 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+  <br>
+  <a href="https://dashboard-layout-design.vercel.app/"><img src="https://res.cloudinary.com/amitkumarshaw/image/upload/v1700029298/dashboardLogo_kfwasd.png" alt="dashboard-design" width="200"></a>
+  <br>
+  Dashboard
+  <br>
+</h1>
 
-## Available Scripts
+<h4 align="center">A dashboard design with static data</h4>
 
-In the project directory, you can run:
+<p align="center">
+  <a href="https://react.dev/">
+    <img width="20px" src="https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-svg-vector.svg" alt="React">
+  </a>
+ 
+   <a href="https://tailwindcss.com/">
+    <img height="20px" width="30px" src="https://w7.pngwing.com/pngs/293/485/png-transparent-tailwind-css-hd-logo.png">
+  </a>
+ 
+</p>
 
-### `npm start`
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#related">Related</a> •
+  <a href="#license">License</a>
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<hr/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Screenshots
 
-### `npm test`
+![screenshot](https://res.cloudinary.com/amitkumarshaw/image/upload/v1700030453/Screenshot_282_cfj9uo.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<hr/>
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Key Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Forms charts and tables using static data
+* Completely responsive.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## How to run in your system
 
-### `npm run eject`
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+# Clone this repository
+$ git clone ...
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Go into the frontend
+$ cd dashboard-design
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Install dependencies
+$ npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Start local server
+$ npm run start
+```
 
-## Learn More
+## Credits
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This web app uses the following technologies:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [React.js ](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-### Code Splitting
+This web app uses the following important npm packages:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [apex-charts](https://www.npmjs.com/package/apexcharts)
+- [react-icons - for icons](https://react-icons.github.io/react-icons/)
 
-### Analyzing the Bundle Size
+## Related
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+[Dashboard-design](https://dashboard-layout-design.vercel.app/) - Deployed version of this web app.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## You may also like...
 
-### Advanced Configuration
+- [Youtube Clone](https://github.com/Amit-Shaw7/yt-clone-frontend) - A youtube clone.
+- [Pijja](https://github.com/Amit-Shaw7/pizzaApp---Frontend) - A dummy pizza ordering webapp
+- [Connect](https://github.com/Amit-Shaw7/connect) - A social media web app
+- [Origin AI](https://github.com/Amit-Shaw7/saas-ai) - An ai tool like chatgpt
+- [Managet](https://github.com/Amit-Shaw7/kanban-task-management) - A Task management web app with drag and drop feature
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
+MIT
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+> [Amit Shaw](https://amitshawv2.vercel.app) &nbsp;&middot;&nbsp;
+> GitHub [Amit-Shaw7](https://github.com/Amit-Shaw7) &nbsp;&middot;&nbsp;
+> LinkedIn [amit-shaw-a95121230](https://www.linkedin.com/in/amit-shaw-a95121230/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
